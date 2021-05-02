@@ -3,7 +3,7 @@ package LinkedList;
 // Space O(1)
 public class Q34_ReverseLinkedList_iterative {
 	public ListNode reverse(ListNode head) {
-		//corner case 被天然handle了
+		//corner case
 		ListNode pre = null;
 		while (head != null) {
 			ListNode nxt = head.next;
