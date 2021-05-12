@@ -1,7 +1,8 @@
 const app = Vue.createApp({
     data() {
       return {
-          userInput: ''
+          userInput: '',
+          confirmedInput: ''
       };
     },
     methods: {
@@ -10,8 +11,11 @@ const app = Vue.createApp({
         },
         saveInput(event) {
             this.userInput = event.target.value;
+        },
+        confirmInput() {
+            this.confirmedInput = this.userInput;
         }
     }
 });
 
-app.mount('assignment');
+app.mount('#assignment');
