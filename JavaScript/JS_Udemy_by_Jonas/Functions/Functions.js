@@ -1,4 +1,4 @@
-// Function Declarations: we can call function before they are defined
+    // Function Declarations: Function that can be used before it's declared
 
 function calcAge1(birthYeah) {
     return 2037 - birthYeah;
@@ -7,15 +7,14 @@ function calcAge1(birthYeah) {
 const age1 = calcAge1(1991);
 
 
-// Function Expressions: we can not call function before they are defined
+// Function Expressions: Essentially a function value stored in a variable
 const calcAge2 = function(birthYeah) {
     return 2037 - birthYeah;
 }
 
 const age2 = calcAge2(birthYeah)
 
-// Arrow Function
-// When use Arrow Function? arrow function do not have "this" keyword
+// Arrow Function: Greate for a quick one-line functions. Has no this keyword (more later...)
 const calcAge3 = birthYeah => 2037 - birthYeah;
 const age3 = calcAge3(1991)
 
